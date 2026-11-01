@@ -1,0 +1,10 @@
+# The site lives in a subdirectory; point Netlify at it so the Vite build runs there.
+[build]
+  base = "ANSH-DIGITAL-Website"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
